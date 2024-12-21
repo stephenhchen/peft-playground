@@ -1,0 +1,3 @@
+[submodule "LLM-Adapters"]
+	path = LLM-Adapters
+	url = https://github.com/AGI-Edgerunners/LLM-Adapters.git
