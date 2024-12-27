@@ -23,8 +23,8 @@ def train(cfg: DictConfig):
     peft_config = LoraConfig(task_type=TaskType.CAUSAL_LM,
                              inference_mode=False,
                              r=cfg.training.r,
-                             lora_alpha=cfg.alpha,
-                             lora_dropout=cfg.lora_dropout)
+                             lora_alpha=cfg.training.lora_alpha,
+                             lora_dropout=cfg.training.lora_dropout)
      
     tokenizer = AutoTokenizer.from_pretrained(cfg.model.name)
     dataset = CommonSenseDataset(cfg.finetune_dataset.path, tokenizer)
