@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - model: llama
+  - finetune_dataset: common_sense
+  - training: common_sense
+
+
+output_dir: "models/llama_finetuned"
