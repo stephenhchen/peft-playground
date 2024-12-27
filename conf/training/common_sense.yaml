@@ -12,3 +12,8 @@ gradient_accumulation_steps: 32
 optim: "adamw_torch"  # Memory-efficient optimizer
 fp16: False
 learning_rate: 2e-5
+
+# lora config
+r: 8
+lora_alpha: 32
+lora_dropout: .1
